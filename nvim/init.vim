@@ -59,12 +59,13 @@ call dein#add('Shougo/vimproc')
 
 "Color Scheme
 call dein#add('nanotech/jellybeans.vim')
-colorscheme jellybeans
 set background=dark
 
 "C++ Develop
 call dein#add('rhysd/vim-clang-format')
 call dein#end()
+
+colorscheme jellybeans
 
 """"""""""""""""""""""""""""""""
 "ClangFormat
