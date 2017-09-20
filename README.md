@@ -1,11 +1,10 @@
 # .nvim
 
 ### nvim (ubuntu)
-`sudo apt-get install software-properties-common
-
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt-get update
-sudo apt-get install neovim`
+`sudo apt-get install software-properties-common`  
+`sudo add-apt-repository ppa:neovim-ppa/unstable`  
+`sudo apt-get update`  
+`sudo apt-get install neovim`  
 
 ### 導入  
 1. home 以下で `git clone https://github.com/tetsuma-y/.nvim/`
