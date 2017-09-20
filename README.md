@@ -1,5 +1,12 @@
 # .nvim
 
+### nvim (ubuntu)
+`sudo apt-get install software-properties-common
+
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt-get update
+sudo apt-get install neovim`
+
 ### 導入  
 1. home 以下で `git clone https://github.com/tetsuma-y/.nvim/`
 2. .bashrc に `export XDG_CONFIG_HOME="$HOME/.nvim"` を追記
