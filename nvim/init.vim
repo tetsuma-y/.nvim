@@ -2,6 +2,14 @@ if &compatible
   set nocompatible
 endif
 
+:filetype indent on
+:filetype plugin on
+
+"Encoding
+set encoding=utf-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileformats=unix,dos,mac
+
 "valid backspace
 set backspace=2
 set backspace=indent,eol,start
@@ -37,6 +45,7 @@ call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 call dein#add('Shougo/neocomplete.vim')
 call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/neosnippet')
+call dein#add('Shougo/neosnippet-snipetts')
 
 "Unite IDE
 call dein#add('Shougo/vimfiler')
