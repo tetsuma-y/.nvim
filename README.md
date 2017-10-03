@@ -21,3 +21,11 @@ sudo apt-get install neovim
 
 ### 将来
 - uniteの開発が停止したため、deniteに乗り換えたい(filerとかがShougo氏の物がでれば乗り換える)
+
+### 直接関係ないが、共用環境でlocalにnvimをinstall
+```
+rm -r build/
+make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
+make install
+export PATH="$HOME/neovim/bin:$PATH"
+```
