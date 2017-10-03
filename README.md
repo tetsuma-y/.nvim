@@ -26,7 +26,7 @@ sudo apt-get install neovim
 ### 直接関係ないが、共用環境でlocalにnvimをinstall
 ```
 rm -r build/
-make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/neovim"
+make CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$HOME/bin/neovim"
 make install
-export PATH="$HOME/neovim/bin:$PATH"
+export PATH="$HOME/bin/neovim/bin:$PATH"
 ```
