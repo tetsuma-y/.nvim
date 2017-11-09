@@ -30,3 +30,6 @@ make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$
 make install
 export PATH="$HOME/bin/neovim/bin:$PATH"
 ```
+### gitの設定でnvimをmergetoolとかdifftooｌで使う
+
+https://gist.github.com/huytd/78c676a797f81eb08cdedf5400e1b6a3
