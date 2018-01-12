@@ -41,6 +41,7 @@ call dein#add('Shougo/dein.vim')
 "call dein#add('Shougo/denite.vim')
 call dein#add('Shougo/unite.vim')
 call dein#add('Shougo/vimproc.vim', {'build': 'make'})
+call dein#add('kassio/neoterm')
 
 call dein#add('Shougo/neocomplete.vim')
 call dein#add('Shougo/neomru.vim')
@@ -103,3 +104,11 @@ noremap ;o <ESC>:<C-u>Unite -vertical -no-quit -winwidth=90 outline<CR>
 nnoremap <silent> ;d <ESC>:Unite -vertical gtags/def<CR>
 nnoremap <silent> ;r <ESC>:Unite -vertical gtags/ref<CR>
 nnoremap <silent> ;g <ESC>:Unite -vertical gtags/grep<CR>
+
+""""""""""""""""""""""""""""""""
+"NeoTerm
+let g:neoterm_autoscroll=1
+nnoremap <silent> ;t :Tnew<CR>
+tnoremap <silent> <ESC> <C-\><C-n>
+"nnoremap <silent> <C-R> V:TREPLSendLine<cr>
+"vnoremap <silent> <C-R> V:TREPLSendSelection<cr>'>j$
