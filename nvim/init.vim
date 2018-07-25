@@ -29,6 +29,9 @@ set hlsearch
 filetype off
 set t_Co=256
 
+" clipboard
+set clipboard+=unnamedplus
+
 """"""""""""""""""""""""""""""""
 "DeinPlugins
 """"""""""""""""""""""""""""""""
@@ -97,7 +100,7 @@ noremap ;b <ESC>:<C-u>Unite -winwidth=90 build<CR>
 """"""""""""""""""""""""""""""""
 "Unite outline
 """"""""""""""""""""""""""""""""
-noremap ;o <ESC>:<C-u>Unite -vertical -no-quit -winwidth=90 outline<CR>
+noremap ;o <ESC>:<C-u>Unite -vertical -no-quit outline<CR>
 
 """"""""""""""""""""""""""""""""
 "GNU GLOBAL
@@ -108,7 +111,9 @@ nnoremap <silent> ;g <ESC>:Unite -vertical gtags/grep<CR>
 """"""""""""""""""""""""""""""""
 "NeoTerm
 let g:neoterm_autoscroll=1
-nnoremap <silent> ;t :Tnew<CR>
+let g:neoterm_default_mod='belowright'
+let g:neoterm_autoinsert = 1
+nnoremap <silent> ;t <ESC>:Tnew<CR>
 tnoremap <silent> <ESC> <C-\><C-n>
 "nnoremap <silent> <C-R> V:TREPLSendLine<cr>
 "vnoremap <silent> <C-R> V:TREPLSendSelection<cr>'>j$
