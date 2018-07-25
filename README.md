@@ -18,6 +18,7 @@ sudo apt-get install neovim
 ### ハマリポイント
 - global は 6.4以降でないと動かない(ubuntu 16.04 LTS では default 5.7なので動かず)
 - clang も必要 C/C++ の構文解析に
+- ctags も必要 unite-outline に (ubuntuでは sudo apt install exuberant-ctags)
 - python3は必要（deniteを入れてないので厳密に今はいらないかも)
 
 ### 将来
@@ -30,6 +31,6 @@ make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_EXTRA_FLAGS="-DCMAKE_INSTALL_PREFIX=$
 make install
 export PATH="$HOME/bin/neovim/bin:$PATH"
 ```
-### gitの設定でnvimをmergetoolとかdifftooｌで使う
+### gitの設定でnvimをmergetoolとかdifftoolで使う
 
 https://gist.github.com/huytd/78c676a797f81eb08cdedf5400e1b6a3
