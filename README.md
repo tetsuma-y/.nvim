@@ -13,7 +13,8 @@ sudo apt-get install neovim
 2. deinを入れる. `~/.nvim/` 以下で、 `git clone https://github.com/Shougo/dein.vim`
 3. .bashrc に `export XDG_CONFIG_HOME="$HOME/.nvim"` を追記
 4. nvim上で`:call dein#install()`
-5. mustではないけど、.bashrc に`alias vim='nvim'`追加でvimとして扱う
+5. `#sudo apt install xsel`
+6. mustではないけど、.bashrc に`alias vim='nvim'`追加でvimとして扱う
 
 ### ハマリポイント
 - global は 6.4以降でないと動かない(ubuntu 16.04 LTS では default 5.7なので動かず)
