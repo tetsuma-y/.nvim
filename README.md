@@ -14,7 +14,7 @@ sudo apt install neovim
 2. deinを入れる. `~/.nvim/` 以下で、 `git clone https://github.com/Shougo/dein.vim`
 3. .bashrc に `export XDG_CONFIG_HOME="$HOME/.nvim"` を追記
 4. nvim上で`:call dein#install()`
-5. `sudo apt install xsel`
+5. `sudo apt install xsel` clipboard yank に必要
 6. mustではないけど、.bashrc に`alias vim='nvim'`追加でvimとして扱う
 
 ### ハマリポイント
