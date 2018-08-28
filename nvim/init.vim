@@ -59,7 +59,7 @@ call dein#add('Shougo/unite.vim')
 call dein#add('Shougo/vimproc.vim', {'build': 'make'})
 call dein#add('kassio/neoterm')
 
-call dein#add('Shougo/neocomplete.vim')
+call dein#add('justmao945/vim-clang')
 call dein#add('Shougo/neomru.vim')
 call dein#add('Shougo/neosnippet')
 call dein#add('Shougo/neosnippet-snippets')
@@ -114,6 +114,12 @@ noremap ;b <ESC>:<C-u>Unite -winwidth=90 build<CR>
 "Unite outline
 """"""""""""""""""""""""""""""""
 noremap ;o <ESC>:<C-u>Unite -vertical -no-quit outline<CR>
+
+""""""""""""""""""""""""""""""""
+"vim clang
+""""""""""""""""""""""""""""""""
+let g:clang_c_options = '-std=c11'
+let g:clang_cpp_options = '-std=c++1z -stdlib=libc++ --pedantic-errors'
 
 """"""""""""""""""""""""""""""""
 "GNU GLOBAL
