@@ -23,7 +23,6 @@ sudo apt install neovim
 - global は 6.4以降でないと動かない(ubuntu 16.04 LTS では default 5.7なので動かず)
 - clang も必要 C/C++ の構文解析に
 - ctags も必要 unite-outline に (ubuntuでは sudo apt install exuberant-ctags)
-- python3は必要（deniteを入れてないので厳密に今はいらないかも)
 - WSL で clipboard yank するためには、https://github.com/equalsraf/win32yank/releases のexeを  
   WSL PATH の通ったところに置く。
 
