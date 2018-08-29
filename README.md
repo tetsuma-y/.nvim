@@ -15,7 +15,9 @@ sudo apt install neovim
 3. .bashrc に `export XDG_CONFIG_HOME="$HOME/.nvim"` を追記
 4. nvim上で`:call dein#install()`
 5. `sudo apt install xsel` clipboard yank に必要
-6. mustではないけど、.bashrc に`alias vim='nvim'`追加でvimとして扱う
+6. `sudo apt install python3-pip`, `pip3 install neovim` deoplete.nvim に必要。
+   :UpdateRemotePlugins がvim上で必要かも。
+7. mustではないけど、.bashrc に`alias vim='nvim'`追加でvimとして扱う
 
 ### ハマリポイント
 - global は 6.4以降でないと動かない(ubuntu 16.04 LTS では default 5.7なので動かず)
