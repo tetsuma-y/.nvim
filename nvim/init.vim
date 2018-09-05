@@ -15,10 +15,13 @@ set backspace=2
 set backspace=indent,eol,start
 
 " タブ幅の設定
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set listchars=tab:\ \ ,eol:$
+
+"カレントディレクトリ.
+nnoremap <silent> ;l <ESC>:lcd %:h<CR>
 
 " 表示系
 set number
@@ -45,6 +48,7 @@ if system('uname -a | grep Microsoft') != ""
         \   'cache_enabled': 1,
         \ }
 endif
+
 """"""""""""""""""""""""""""""""
 "DeinPlugins
 """"""""""""""""""""""""""""""""
