@@ -5,6 +5,8 @@ endif
 :filetype indent on
 :filetype plugin on
 
+set shortmess+=I
+
 "Encoding
 set encoding=utf-8
 set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
@@ -17,7 +19,7 @@ set backspace=indent,eol,start
 " タブ幅の設定
 set tabstop=2
 set shiftwidth=2
-set expandtab
+"set expandtab
 set listchars=tab:\ \ ,eol:$
 
 "カレントディレクトリ.
