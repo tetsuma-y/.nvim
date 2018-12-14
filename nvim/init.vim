@@ -19,8 +19,7 @@ set backspace=indent,eol,start
 " タブ幅の設定
 set tabstop=2
 set shiftwidth=2
-"set expandtab
-set listchars=tab:\ \ ,eol:$
+set expandtab
 
 "カレントディレクトリ.
 nnoremap <silent> ;l <ESC>:lcd %:h<CR>
