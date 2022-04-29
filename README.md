@@ -7,6 +7,7 @@ sudo apt install python-software-properties
 sudo apt-add-repository ppa:neovim-ppa/stable
 sudo apt update
 sudo apt install neovim
+sudo apt install ctags clang global
 ```
 
 ### 導入  
@@ -20,9 +21,12 @@ sudo apt install neovim
    `:UpdateRemotePlugins` がvim上で必要かも。
 8. mustではないけど、.bashrc に`alias vim='nvim'`追加でvimとして扱う
 
-### ハマリポイント
-- clang も必要 C/C++ の構文解析に
-- ctags も必要 unite-outline に (ubuntuでは sudo apt install exuberant-ctags)
+### 各 package の目的
+- global :gtags
+- clang :C/C++ の構文解析
+- ctags :unite-outline
+
+### WSL での clipboard共有
 - WSL で clipboard yank するためには、https://github.com/equalsraf/win32yank/releases のexeを  
   WSL PATH の通ったところに置く。
 
