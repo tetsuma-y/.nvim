@@ -1,6 +1,6 @@
 # .nvim
 
-### nvim (ubuntu)
+### nvim (ubuntu 20.04 LTS)
 ```
 sudo apt install software-properties-common
 sudo apt install python-software-properties
@@ -21,7 +21,6 @@ sudo apt install neovim
 8. mustではないけど、.bashrc に`alias vim='nvim'`追加でvimとして扱う
 
 ### ハマリポイント
-- global は 6.4以降でないと動かない(ubuntu 16.04 LTS では default 5.7なので動かず)
 - clang も必要 C/C++ の構文解析に
 - ctags も必要 unite-outline に (ubuntuでは sudo apt install exuberant-ctags)
 - WSL で clipboard yank するためには、https://github.com/equalsraf/win32yank/releases のexeを  
