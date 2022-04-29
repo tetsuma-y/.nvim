@@ -22,9 +22,9 @@ sudo apt install ctags clang global
 8. mustではないけど、.bashrc に`alias vim='nvim'`追加でvimとして扱う
 
 ### 各 package の目的
-- global :gtags
-- clang :C/C++ の構文解析
-- ctags :unite-outline
+- global: gtags
+- clang: C/C++ の構文解析
+- ctags: unite-outline
 
 ### WSL での clipboard共有
 - WSL で clipboard yank するためには、https://github.com/equalsraf/win32yank/releases のexeを  
