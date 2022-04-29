@@ -3,7 +3,6 @@
 ### nvim (ubuntu 20.04 LTS)
 ```
 sudo apt install software-properties-common
-sudo apt install python-software-properties
 sudo apt-add-repository ppa:neovim-ppa/stable
 sudo apt update
 sudo apt install neovim
